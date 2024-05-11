@@ -1,0 +1,80 @@
+POST http://127.0.0.1:5000/add_user HTTP/1.1
+content-type:application/json
+
+{
+    "username": "Simon" 
+
+} 
+
+###
+POST http://127.0.0.1:5000/add_task HTTP/1.1
+content-type:application/json
+
+{
+    "title": "day_1",
+    "description": "running",
+    "user_id": "1"
+}
+
+###
+GET http://127.0.0.1:5000/tasks?status=completed HTTP/1.1
+content-type:application/json
+
+###
+GET http://127.0.0.1:5000/users HTTP/1.1
+content-type:application/json
+
+###
+DELETE http://127.0.0.1:5000/user/1 HTTP/1.1
+content-type:application/json
+
+###
+PUT http://127.0.0.1:5000/update_user/2 HTTP/1.1
+content-type:application/json
+
+{
+    "username": "Ama"
+}
+
+###
+POST http://127.0.0.1:5000/add_task HTTP/1.1
+content-type:application/json
+
+{
+    "title": "day_2",
+    "description": "heating",
+    "user_id": "2"
+
+}
+
+###
+GET http://127.0.0.1:5000/users HTTP/1.1
+content-type:application/json
+
+###
+POST http://127.0.0.1:5000/add_task HTTP/1.1
+content-type:application/json
+
+{
+    "title": "day_21",
+    "description": "Warming",
+    "user_id": "3"
+
+}
+
+###
+PUT http://127.0.0.1:5000/mark_complete/2 HTTP/1.1
+content-type:application/json
+
+###
+GET http://127.0.0.1:5000/tasks?status=completed HTTP/1.1
+content-type:application/json
+
+###
+POST http://127.0.0.1:5000/add_user HTTP/1.1
+content-type:application/json
+
+{
+    "username": "Cooking",
+    "email" : "cooking@gmail.com"
+}
